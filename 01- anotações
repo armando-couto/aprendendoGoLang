@@ -24,3 +24,14 @@
 	}
 ----------------------------------------------------------
 
+for i := 0; i < len(sites); i++ {
+		fmt.Println(sites[i])
+	}
+ 
+ 
+ é igual a
+ 
+ for i, site := range sites {
+	fmt.Println("Testando site", i, ": ", site)
+	testaSite(site)
+		}
