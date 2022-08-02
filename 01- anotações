@@ -1,0 +1,26 @@
+  var nome =   ==  nome :=
+----------------------------------------------------------
+  //if comando == 1 {
+	//	fmt.Println("Monitorando")
+	//} else if comando == 2 {
+	//	fmt.Print("Exibindop logs")
+	//} else if comando == 0 {
+	//	fmt.Print("Saindo do programa")
+	//} else {
+	//	fmt.Println("Não conheço este comando")
+	//}
+  
+  é igual a 
+  
+  switch comando {
+	case 1:
+		fmt.Println("Monitorando")
+	case 2:
+		fmt.Print("Exibindop logs")
+	case 0:
+		fmt.Print("Saindo do programa")
+	default:
+		fmt.Println("Não conheço este comando")
+	}
+----------------------------------------------------------
+
