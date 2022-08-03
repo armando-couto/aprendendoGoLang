@@ -1,0 +1,3 @@
+fmt - Funções para a formatação de strings.
+os - Operações que lidamn com o sistema operacional hospedeiro de forma independetes.
+strconv - Funções para converter de strings para outros formatos e vice-versa.
