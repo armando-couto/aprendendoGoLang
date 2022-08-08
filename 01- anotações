@@ -35,3 +35,9 @@ for i := 0; i < len(sites); i++ {
 	fmt.Println("Testando site", i, ": ", site)
 	testaSite(site)
 		}
+		
+		
+
+-------------------------------------------------------------
+
+
