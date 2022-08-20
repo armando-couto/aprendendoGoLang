@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"awesomeProject/Login/models"
 	"html/template"
 	"log"
+	"mesa/models"
 	"net/http"
 	"strconv"
 )
