@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"awesomeProject/Login/controllers"
+	"mesa/controllers"
 	"net/http"
 )
 

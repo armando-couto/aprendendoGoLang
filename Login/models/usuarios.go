@@ -1,10 +1,10 @@
 package models
 
-import "awesomeProject/Login/db"
+import "mesa/db"
 
 type Usuario struct {
-	Id, Squad    int
-	Nome, Email, Permissao   string
+	Id, Squad              int
+	Nome, Email, Permissao string
 }
 
 func BuscaTodosOsUsuarios() []Usuario {
@@ -22,7 +22,6 @@ func BuscaTodosOsUsuarios() []Usuario {
 		var id, squad int
 		var nome, email, permissao string
 
-
 		err = selectDeTodosOsUsuarios.Scan(&id, &nome, &email, &squad, &permissao)
 		if err != nil {
 			panic(err.Error())
@@ -39,7 +38,8 @@ func BuscaTodosOsUsuarios() []Usuario {
 	defer db.Close()
 	return usuarios
 }
-func CriaNovoUsuario(nome string, email string, squad int, permissao string ) {
+
+func CriaNovoUsuario(nome string, email string, squad int, permissao string) {
 	db := db.ConectaComBancoDeDados()
 
 	insereDadosNoBanco, err := db.Prepare("insert into usuario(nome, email, squad, permissao) values($1, $2, $3, $4)")
