@@ -16,7 +16,7 @@ type User struct {
 
 // CreateUserRecord Cria um registro de usuario na base de dados
 func (user *User) CreateUserRecord() error {
-	result := database.GlobalDB.Create(&user)
+	result := database.DB.Create(&user)
 	if result.Error != nil {
 		return result.Error
 	}

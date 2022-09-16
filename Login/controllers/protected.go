@@ -14,7 +14,7 @@ func Profile(c *gin.Context) {
 
 	email, _ := c.Get("email") // from the authorization middleware
 
-	result := database.GlobalDB.Where("email = ?", email.(string)).First(&user)
+	result := database.DB.Where("email = ?", email.(string)).First(&user)
 
 	if result.Error == gorm.ErrRecordNotFound {
 		c.JSON(404, gin.H{

@@ -78,7 +78,7 @@ func Login(c *gin.Context) {
 		return
 	}
 
-	result := database.GlobalDB.Where("email = ?", payload.Email).First(&user)
+	result := database.DB.Where("email = ?", payload.Email).First(&user)
 
 	if result.Error == gorm.ErrRecordNotFound {
 		c.JSON(401, gin.H{

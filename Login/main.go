@@ -39,7 +39,7 @@ func main() {
 		log.Fatalln("could not create database", err)
 	}
 
-	database.GlobalDB.AutoMigrate(&models.User{})
+	database.DB.AutoMigrate(&models.User{})
 
 	r := setupRouter()
 	r.Run(":8080")
